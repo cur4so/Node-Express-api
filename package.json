@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-express-api-example",
+  "version": "1.0.0",
+  "description": "Example of Node/Express API for csv files processing",
+  "repository": "https://github.com/cur4so/Node-Express-api.git",
+  "author": "Olga K",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
