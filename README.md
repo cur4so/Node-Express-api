@@ -11,9 +11,11 @@ Getting Started
 * Start the server (--harmony_array_includes flag set to properly handle array inclusion checks)
 * `node --harmony_array_includes server.js`
 * In a separate terminal make the api call: 
-* `curl http://0.0.0.0:3000/organizations?[parameter=value]`
+* `curl http://0.0.0.0:3000/organizations[/:file_to_be_processed_id]?[parameter=value]`
 * For example:
 * `curl http://0.0.0.0:3000/organizations?category=Non-Profit\&orderby=name\&direction=dsc |json_pp`
+* or
+* `curl http://0.0.0.0:3000/organizations/ind1?category=Non-Profit\&orderby=name\&direction=dsc |json_pp`
 
 
 server.js: runs an Express server on localhost port 3000.
@@ -26,8 +28,7 @@ lib: business logic. For this exercise, there is just 'processing.js'
 Further improvements:
 --------------------
 
-1. make the api able to take a file reference as the parameter or download 
-files from a remote repository
+1. stream processing for big files, remote files handling 
 
 2. add tests 
 
