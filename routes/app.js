@@ -2,7 +2,7 @@ const express = require('express');
 const config = require('../config.json');
 const processing = require('../lib/processing');
 
-var app = express();
+const app = express();
 
 app.get('/organizations', function (req, res) {
     processing.select(res, req.query, config.default);

@@ -6,8 +6,9 @@
   "author": "Olga K",
   "license": "UNLICENSED",
   "dependencies": {
-    "express": "^4.14.0"
-    "csvtojson": "^2.15.9"
-    "fs": "^2.15.9"
+    "express": "^4.14.0",
+    "csvtojson": "^1.1.5",
+    "fs": "^0.0.2",
+    "lodash": "^4.17.0"
   }
 }
